@@ -13,6 +13,7 @@
   --border-radius: 12px;
 }
 
+/* General Styles */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -30,6 +31,7 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
+/* App Container */
 .app-container {
   text-align: center;
   background: white;
@@ -45,7 +47,7 @@ body.dark-mode .app-container {
   color: var(--text-dark);
 }
 
-/* Heading color adjustment */
+/* Heading */
 h2 {
   color: var(--primary-color);
   font-weight: 600;
@@ -55,7 +57,7 @@ body.dark-mode h2 {
   color: var(--secondary-color);
 }
 
-/* Input field adjustments for dark mode */
+/* Input Field */
 .todo-input {
   margin-bottom: 15px;
 }
@@ -69,6 +71,7 @@ input {
   width: 75%;
   color: var(--text-light);
   background: white;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode input {
@@ -77,7 +80,7 @@ body.dark-mode input {
   border-color: var(--secondary-color);
 }
 
-/* Button styles */
+/* Buttons */
 button {
   padding: 12px;
   cursor: pointer;
@@ -92,10 +95,25 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Filters Button */
+/* Theme Toggle Button */
+.theme-toggle {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.theme-toggle:hover {
+  background-color: var(--button-hover);
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 10px;
+}
+
 .filters button {
   background-color: var(--secondary-color);
   color: white;
+  padding: 10px;
 }
 
 .filters button:hover {
@@ -120,7 +138,7 @@ button.add-task:hover {
   background-color: var(--button-hover);
 }
 
-/* Todo List */
+/* To-Do List */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -145,7 +163,13 @@ button.add-task:hover {
   color: #4a4a4a;
 }
 
+body.dark-mode .todo-list li {
+  background-color: #3c4f60;
+  color: var(--text-dark);
+}
+
 body.dark-mode .todo-list li.completed {
+  background-color: #5b7c75;
   color: var(--text-dark);
 }
 
@@ -153,7 +177,42 @@ body.dark-mode .todo-list li.completed {
   transform: translateY(-3px);
 }
 
-/* Clear Button */
+/* Task Checkbox */
+.todo-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Task Buttons */
+.todo-list button {
+  padding: 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.todo-list button:hover {
+  transform: scale(1.05);
+}
+
+/* Edit and Delete Buttons */
+.todo-list button:nth-child(2) {
+  background-color: #f4a261;
+  color: white;
+}
+
+.todo-list button:nth-child(3) {
+  background-color: #e76f51;
+  color: white;
+}
+
+.todo-list button:nth-child(2):hover {
+  background-color: #e6954b;
+}
+
+.todo-list button:nth-child(3):hover {
+  background-color: #d45d41;
+}
+
+/* Clear Completed Button */
 .clear-btn {
   background-color: #709775;
   color: white;

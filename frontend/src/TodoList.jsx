@@ -118,7 +118,7 @@ export default function TodoList() {
         <AnimatePresence>
           {filteredTasks.map((t, index) => (
             <motion.li
-              key={t.id} // Use task id for better key handling
+              key={t.id}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, x: -50 }}
