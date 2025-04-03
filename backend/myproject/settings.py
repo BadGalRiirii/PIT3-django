@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
+import dj__database__url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-8w*iynjh$7#an!r3rmtmyf&$o2z6d8@zw54nweu4qy+9lzfuxh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pit4-django.onrender.com', 'tineallives9.github.io']
+ALLOWED_HOSTS = ['pit4-django.onrender.com', 'BadGalRiirii.github.io']
 
 CORS_ALLOWED_ORIGINS = [
     ' ',
