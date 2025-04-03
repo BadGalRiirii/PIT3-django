@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --background-light: #e3f1e8; /* Muted soft green */
+  --background-dark: #2c3e50; /* Deep teal for dark mode */
+  --text-light: #1b2a34; /* Darker text for contrast */
+  --text-dark: #eaf4f4; /* Light text in dark mode */
+  --primary-color: #81a684; /* Muted sage green */
+  --secondary-color: #a5c4a7; /* Soft pastel green */
+  --button-hover: #6d9076; /* Deep green hover */
+  --task-bg: #e8f0e8; /* Softer light green */
+  --completed-bg: #c1d9c5; /* Gentle muted green */
+  --border-radius: 12px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.app-container {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  width: 360px;
+}
+
+body.dark-mode .app-container {
+  background: #36454f;
+  color: var(--text-dark);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.todo-input {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  font-size: 16px;
+  width: 75%;
+  color: var(--text-light);
+  background: white;
+}
+
+button {
+  padding: 12px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.filters button {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.filters button:hover {
+  background-color: #799f7e;
+}
+
+button.add-task {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.add-task:hover {
+  background-color: var(--button-hover);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 12px;
+  background-color: var(--task-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-list li.completed {
+  background-color: var(--completed-bg);
+  text-decoration: line-through;
+  color: #4a4a4a;
+}
+
+.todo-list li:hover {
+  transform: translateY(-3px);
+}
+
+.clear-btn {
+  background-color: #709775;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #567a5f;
+}
