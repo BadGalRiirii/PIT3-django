@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-8w*iynjh$7#an!r3rmtmyf&$o2z6d8@zw54nweu4qy+9lzfuxh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pit4-django.onrender.com', 'BadGalRiirii.github.io']
+ALLOWED_HOSTS = ['pit4-django.onrender.com']
 
 CORS_ALLOWED_ORIGINS = [
     ' ',
