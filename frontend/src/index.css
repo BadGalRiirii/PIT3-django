@@ -45,11 +45,17 @@ body.dark-mode .app-container {
   color: var(--text-dark);
 }
 
+/* Heading color adjustment */
 h2 {
   color: var(--primary-color);
   font-weight: 600;
 }
 
+body.dark-mode h2 {
+  color: var(--secondary-color);
+}
+
+/* Input field adjustments for dark mode */
 .todo-input {
   margin-bottom: 15px;
 }
@@ -65,6 +71,13 @@ input {
   background: white;
 }
 
+body.dark-mode input {
+  color: var(--text-dark);
+  background: #2c3e50;
+  border-color: var(--secondary-color);
+}
+
+/* Button styles */
 button {
   padding: 12px;
   cursor: pointer;
@@ -79,6 +92,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Filters Button */
 .filters button {
   background-color: var(--secondary-color);
   color: white;
@@ -88,6 +102,15 @@ button:hover {
   background-color: #799f7e;
 }
 
+body.dark-mode .filters button {
+  background-color: var(--primary-color);
+}
+
+body.dark-mode .filters button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Add Task Button */
 button.add-task {
   background-color: var(--primary-color);
   color: white;
@@ -97,6 +120,7 @@ button.add-task:hover {
   background-color: var(--button-hover);
 }
 
+/* Todo List */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -121,10 +145,15 @@ button.add-task:hover {
   color: #4a4a4a;
 }
 
+body.dark-mode .todo-list li.completed {
+  color: var(--text-dark);
+}
+
 .todo-list li:hover {
   transform: translateY(-3px);
 }
 
+/* Clear Button */
 .clear-btn {
   background-color: #709775;
   color: white;
