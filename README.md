@@ -1,7 +1,7 @@
 NOTE : THIS IS A SUBMISSION FOR PIT 3. React + Django Rest API
 
 API ENDPOINTS : 
-https://pit4-django.onrender.com/api/1/todos/fetch/
+https://pit4-django.onrender.com/api/todos/fetch/
 https://pit4-django.onrender.com/api/1/todos/create/
 https://pit4-django.onrender.com/api/todos/1/delete/
 https://pit4-django.onrender.com/api/todos/1/update/
