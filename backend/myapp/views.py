@@ -76,3 +76,17 @@ class TodoDeleteView(APIView):
 
         todo.delete()  # Delete To-Do item
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
+
+class SecureHelloView(APIView):
+    permission_classes = [IsAuthenticated]
+    def get(self, request):
+        return Response({"message": f"Hello, {request.user.username}!"})
+
+class MyProtectedView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        return Response({"message": "Hello, World!"})   
