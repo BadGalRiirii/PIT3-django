@@ -67,7 +67,7 @@ export default function TodoList() {
     if (editedTask.trim() === "") return;
     const updatedTask = { title: editedTask, completed: false };
 
-    const response = await fetch(`https://pit4-django.onrender.com/api/todos/${taskId}/update/`, {
+    const response = await fetch(`https://pit4-django.onrender.com/api/todos/1/update/`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedTask),
