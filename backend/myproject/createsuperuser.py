@@ -9,8 +9,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         # Predefined credentials
-        username = 'rehanaadmin'
-        email = 'rehanaadmin@email.com'
+        username = 'adminrehana'
+        email = 'adminrehana@email.com'
         password = 'rehanaadmin123'
 
         # Create superuser
