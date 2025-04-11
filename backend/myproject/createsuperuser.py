@@ -11,7 +11,7 @@ class Command(BaseCommand):
         # Predefined credentials
         username = 'rehana'
         email = 'rehana@mail.com'
-        password = 'admin123'
+        password = 'rehana123'
 
         # Create superuser
         User = get_user_model()
